@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sumiran Markunde - Mechanical Engineer & Developer</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="text-gray-200">
+
+    <!-- Background Animation Canvas -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Header -->
+    <header id="header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold gradient-text">Sumiran Markunde </a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="#about" class="hover:text-blue-400 transition-colors">About</a>
+                <a href="#skills" class="hover:text-blue-400 transition-colors">Skills</a>
+                <a href="#projects" class="hover:text-blue-400 transition-colors">Projects</a>
+                <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition-colors">Contact</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-gray-200">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-gray-800/90 backdrop-blur-sm">
+            <a href="#about" class="block py-2 px-4 text-sm hover:bg-gray-700">About</a>
+            <a href="#skills" class="block py-2 px-4 text-sm hover:bg-gray-700">Skills</a>
+            <a href="#projects" class="block py-2 px-4 text-sm hover:bg-gray-700">Projects</a>
+            <a href="#contact" class="block py-2 px-4 text-sm hover:bg-gray-700">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="min-h-screen flex items-center">
+            <div class="container mx-auto px-6 text-center">
+                <img src="69781905dd57ba144ab71ca4271ab294.jpg" alt="Your Name" class="w-36 h-36 rounded-full mx-auto mb-6 border-4 border-blue-500 shadow-lg">
+                <h1 class="text-4xl md:text-6xl font-bold mb-4">
+                    <span class="gradient-text">Mechanical Engineer</span> & <br class="md:hidden"/> Full-Stack Dev
+                </h1>
+                <p class="text-lg md:text-xl text-gray-300 max-w-3xl mx-auto mb-8">
+                    Bridging the gap between physical engineering and the digital world. Passionate about creating innovative solutions, from complex machinery to elegant software.
+                </p>
+                <div class="flex justify-center space-x-4">
+                    <a href="#projects" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-lg transition-transform transform hover:scale-105">View My Work</a>
+                    <a href="#contact" class="bg-gray-700 hover:bg-gray-600 text-white font-bold py-3 px-6 rounded-lg transition-transform transform hover:scale-105">Get In Touch</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12 gradient-text">About Me</h2>
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/3">
+                        <div class="glass-effect rounded-lg p-6">
+                            <img src="69781905dd57ba144ab71ca4271ab294.jpg" alt="About Me" class="rounded-lg shadow-2xl w-full">
+                        </div>
+                    </div>
+                    <div class="md:w-2/3">
+                        <p class="text-gray-300 mb-4">
+                           I am a final-year B.Tech Mechanical Engineering student with a strong passion for technology, software development, and Artificial Intelligence. My journey began with a fascination for how machines work, which led me to pursue mechanical engineering. Along the way, I discovered a deep interest in Python programming and the potential of AI/ML to solve real-world problems.
+                        </p>
+                        <p class="text-gray-300 mb-4">
+                            This dual background equips me with a unique problem-solving perspective — combining structured, analytical thinking from engineering with creative and logical approaches from software development. I am proficient in Python and currently learning Data Structures, Algorithms, and Machine Learning to build efficient, scalable, and intelligent applications.
+                        </p>
+                        <p class="text-gray-300">
+                           I am actively seeking opportunities where I can leverage my diverse skill set to contribute to innovative projects and continue my growth as both an engineer and a developer.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="py-20 bg-gray-900/50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12 gradient-text">My Skillset</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <!-- Technical Skills -->
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-6 text-center text-blue-400">Technical Skills</h3>
+                        <div class="flex flex-wrap justify-center gap-4">
+                            <div class="skill-card">HTML</div>
+                            <div class="skill-card">CSS</div>
+                            <div class="skill-card">JavaScript</div>
+                            <div class="skill-card">GitHub</div>
+                            <div class="skill-card">MongoDB</div>
+                            <div class="skill-card">Netlify</div>
+                            <div class="skill-card">Python</div>
+                            <div class="skill-card">DSA</div>
+                        </div>
+                    </div>
+                    <!-- Mechanical Engineering Skills -->
+                    <div>
+                        <h3 class="text-2xl font-semibold mb-6 text-center text-purple-400">Mechanical Engineering Skills</h3>
+                        <div class="flex flex-wrap justify-center gap-4">
+                            <div class="skill-card-mech">Machine Design</div>
+                            <div class="skill-card-mech">AutoCAD</div>
+                            <div class="skill-card-mech">SolidWorks</div>
+                            <div class="skill-card-mech">MATLAB</div>
+                            <div class="skill-card-mech">CNC Operations</div>
+                            <div class="skill-card-mech">Quality Contro</div>
+                            <div class="skill-card-mech">Prototyping</div>
+                            <div class="skill-card-mech">Manufacturing Processes</div>
+                            <div class="skill-card-mech">Design for Manufacturing (DFM)</div>
+                            <div class="skill-card-mech">Calibration</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-4 gradient-text">Projects</h2>
+                <p class="text-center text-gray-400 mb-8">A selection of my work. Use the filters to see more.</p>
+                <div class="flex justify-center mb-8 space-x-4">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="tech">Tech Projects</button>
+                    <button class="filter-btn" data-filter="mech">Mechanical Projects</button>
+                </div>
+
+                <div id="project-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Mechanical Projects 1 -->
+                    <div class="project-card" data-category="mech">
+                        <img src="https://placehold.co/600x400/1f2937/3b82f6?text=Peel Testing Machine" alt="Project 1" class="w-full h-48 object-cover rounded-t-lg">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 project-title">Designed and developed a cost-effective Peel Testing Machine</h3>
+                            <p class="text-gray-400 mb-4 project-description">Engineered and fabricated a cost-effective Peel Testing Machine with precise load measurement and adjustable fixtures for evaluating adhesive bond strength, achieving reliable test accuracy at reduced manufacturing cost.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="tech-tag">Mechanical Design</span>
+                                <span class="tech-tag">AutoCAD</span>
+                                <span class="tech-tag">SolidWorks</span>
+                            </div>
+                            <div class="flex justify-between items-center mt-4">
+                                <div>
+                                    <a href="mech.project.1.html" class="project-link">OVERVIEW</a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- tech Projects 1 -->
+                    <div class="project-card" data-category="tech">
+                        <img src="https://placehold.co/600x400/1f2937/3b82f6?text=Inventory Demand Forecasting & Optimization System." alt="Project 1" class="w-full h-48 object-cover rounded-t-lg">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 project-title">Inventory Demand Forecasting & Optimization System.</h3>
+                            <p class="text-gray-400 mb-4 project-description">Developed a data-driven system to forecast inventory demand and optimize stock levels, reducing overstock and shortages while improving supply chain efficiency.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">ML</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">Streamlit</span>
+                                <span class="tech-tag">GitHub</span>
+                            </div>
+                            <div class="flex justify-between items-center mt-4">
+                                <div>
+                                    <a href="tech.project.1.html" class="project-link">OVERVIEW</a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mechanical Project 1 -->
+                    <div class="project-card" data-category="mech">
+                        <img src="https://placehold.co/600x400/1f2937/8b5cf6?text=Go-Kart+Design" alt="Project 2" class="w-full h-48 object-cover rounded-t-lg">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 project-title">Go-Kart Design & Fabrication</h3>
+                            <p class="text-gray-400 mb-4 project-description">Designed and fabricated a go-kart, focusing on chassis strength and vehicle dynamics. Performed FEA on the chassis.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="tech-tag-mech">SolidWorks</span>
+                                <span class="tech-tag-mech">FEA</span>
+                                <span class="tech-tag-mech">Fabrication</span>
+                            </div>
+                             <div class="flex justify-between items-center mt-4">
+                                <a href="#" class="project-link">View Report</a>
+                               
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Tech Project 2 -->
+                    <div class="project-card" data-category="tech">
+                        <img src="https://placehold.co/600x400/1f2937/3b82f6?text=Task+Manager" alt="Project 3" class="w-full h-48 object-cover rounded-t-lg">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 project-title">Python Task Automation Bot</h3>
+                            <p class="text-gray-400 mb-4 project-description">A script to automate daily file organization and send email reports. Built using Python and its standard libraries.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Automation</span>
+                            </div>
+                            <div class="flex justify-between items-center mt-4">
+                                <a href="#" class="project-link">Source Code</a>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    
+                     <div class="project-card" data-category="mech">
+                        <img src="https://placehold.co/600x400/1f2937/8b5cf6?text=Heat+Exchanger" alt="Project 4" class="w-full h-48 object-cover rounded-t-lg">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2 project-title">Heat Exchanger Analysis</h3>
+                            <p class="text-gray-400 mb-4 project-description">Analyzed the performance of a shell and tube heat exchanger using CFD simulations to optimize heat transfer.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="tech-tag-mech">CFD</span>
+                                <span class="tech-tag-mech">Ansys</span>
+                                <span class="tech-tag-mech">Thermodynamics</span>
+                            </div>
+                             <div class="flex justify-between items-center mt-4">
+                                <a href="#" class="project-link">View Analysis</a>
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 bg-gray-900/50">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-4 gradient-text">Get In Touch</h2>
+                <p class="text-center text-gray-400 mb-8 max-w-2xl mx-auto">I'm currently looking for new opportunities. Whether you have a question or just want to say hi, my inbox is always open. I'll get back to you!</p>
+                <div class="max-w-xl mx-auto text-center">
+                     <a href="markundejaish1374@gmail.com" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg transition-transform transform hover:scale-105">
+                        Say Hello
+                    </a>
+                    <div class="flex justify-center space-x-6 mt-8">
+                        <a href="https://github.com/Jaish-009" class="text-gray-400 hover:text-blue-400">
+                             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-github"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+                        </a>
+                        <a href="https://example.com" target="_blank"class="inline-block">
+                        <img src="linkedin-blue-style-logo-png-0.png" alt="Example Logo" width="32" height="32" class="hover:opacity-80 transition-opacity duration-200">
+                        </a>
+
+                        <a href="https://example.com" target="_blank"class="inline-block">
+                        <img src="leetcode-3628885-3030025.webp" alt="Example Logo" width="28" height="28" class="hover:opacity-80 transition-opacity duration-200">
+                        </a>
+
+
+                    
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-6">
+        <div class="container mx-auto px-6 text-center text-gray-400">
+            <p>&copy; 2024 Your Name. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- AI Insight Modal -->
+    
+    
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

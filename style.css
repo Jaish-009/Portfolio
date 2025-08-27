@@ -1,0 +1,144 @@
+/* General Body and Font Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #111827; /* bg-gray-900 */
+}
+
+/* Background Animation Canvas Styling */
+#bg-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* Behind content but above body background */
+}
+
+/* Ensure all main content is on top of the canvas */
+header, main, footer {
+    position: relative;
+    z-index: 1;
+}
+
+/* Utility for Gradient Text */
+.gradient-text {
+    background: linear-gradient(to right, #3b82f6, #8b5cf6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Glassmorphism Effect for Cards and Modals */
+.glass-effect {
+    background: rgba(17, 24, 39, 0.6); /* Darker glass effect */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(55, 65, 81, 0.5); /* border-gray-700 */
+}
+
+/* Custom Scrollbar for AI Modal */
+#ai-modal-content::-webkit-scrollbar {
+    width: 8px;
+}
+#ai-modal-content::-webkit-scrollbar-track {
+    background: #2d3748;
+}
+#ai-modal-content::-webkit-scrollbar-thumb {
+    background-color: #4a5568;
+    border-radius: 10px;
+    border: 2px solid #2d3748;
+}
+
+/* Skill Tag Styling */
+.skill-card { 
+    background: rgba(59, 130, 246, 0.1); 
+    border: 1px solid rgba(59, 130, 246, 0.3); 
+    color: #93c5fd; 
+    padding: 8px 16px; 
+    border-radius: 9999px; 
+    font-weight: 500; 
+    transition: all 0.3s; 
+}
+.skill-card:hover { 
+    background: rgba(59, 130, 246, 0.2); 
+    transform: translateY(-2px); 
+}
+.skill-card-mech { 
+    background: rgba(139, 92, 246, 0.1); 
+    border: 1px solid rgba(139, 92, 246, 0.3); 
+    color: #c4b5fd; 
+    padding: 8px 16px; 
+    border-radius: 9999px; 
+    font-weight: 500; 
+    transition: all 0.3s; 
+}
+.skill-card-mech:hover { 
+    background: rgba(139, 92, 246, 0.2); 
+    transform: translateY(-2px); 
+}
+
+/* Project Card Styling */
+.project-card { 
+    background: #1f2937; 
+    border-radius: 0.5rem; 
+    overflow: hidden; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+    border: 1px solid #374151; 
+    display: flex; 
+    flex-direction: column; 
+}
+.project-card .p-6 { 
+    flex-grow: 1; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+}
+.project-card:hover { 
+    transform: translateY(-5px); 
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.1); 
+}
+
+/* Technology Tags on Project Cards */
+.tech-tag { 
+    background-color: #1e40af; 
+    color: #dbeafe; 
+    font-size: 0.75rem; 
+    padding: 0.25rem 0.75rem; 
+    border-radius: 9999px; 
+}
+.tech-tag-mech { 
+    background-color: #5b21b6; 
+    color: #e9d5ff; 
+    font-size: 0.75rem; 
+    padding: 0.25rem 0.75rem; 
+    border-radius: 9999px; 
+}
+
+/* Links within Project Cards */
+.project-link { 
+    color: #60a5fa; 
+    font-weight: 500; 
+    transition: color 0.3s; 
+}
+.project-link:hover { 
+    color: #93c5fd; 
+}
+
+/* Project Filter Buttons */
+.filter-btn { 
+    padding: 8px 20px; 
+    border-radius: 9999px; 
+    font-weight: 500; 
+    transition: all 0.3s; 
+    border: 1px solid #4b5563; 
+    color: #d1d5db; 
+}
+.filter-btn:hover { 
+    background-color: #374151; 
+}
+.filter-btn.active { 
+    background-color: #3b82f6; 
+    color: white; 
+    border-color: #3b82f6; 
+}
+
+/* AI Insight Button */
